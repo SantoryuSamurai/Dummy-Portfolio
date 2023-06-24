@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  font-family: poppins, sans-serif;
+  font-family: "Space Mono", monospace;
 }
 
 .top-container {
@@ -15,23 +15,21 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: url("/resume/assets/bluecode.jpg");
-  background-size: cover;
 }
 
 .top-content {
-  font-family: "Space Mono", monospace;
   color: aliceblue;
+  /*  span{
+       text-decoration: underline;
+   } */
 }
 .top-content h1 {
   font-size: 4rem;
+  text-shadow: 2px 2px 10px #000000;
 }
 .top-content h2 {
   text-align: center;
-  font-size: 2rem;
-}
-.top-content span {
-  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -49,7 +47,7 @@ nav ul {
   padding: 0%;
 }
 nav li {
-  display: inline;
+  display: inline-block;
 }
 nav li a {
   font-size: 1.3rem;
@@ -57,15 +55,110 @@ nav li a {
   padding: 0.75em 2em;
   text-decoration: none;
 }
-nav li a:hover {
-  background: none;
-  text-decoration: underline;
+nav li a span {
+  display: inline-block;
+  /* text-shadow: 1px 0px white; */
+}
+nav li a span:hover {
+  animation-name: fill;
+  animation-duration: 1s;
+}
+@keyframes fill {
+  from {
+    color: black;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  }
+  to {
+    color: white;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  }
 }
 
-.wrapper0 {
-  height: 100vh;
+html {
+  scroll-behavior: smooth;
 }
 
-.wrapper1 {
+.totop {
+  position: fixed;
+  font-size: 1.5rem;
+  bottom: 10px;
+  right: 10px;
+}
+
+.fa-square-arrow-up {
+  color: aliceblue;
+  /* &:hover{
+
+  } */
+}
+
+.content0 {
+  display: flex;
+  width: 100%;
   height: 100vh;
+  justify-content: center;
+  background-color: #131a43;
+}
+
+.data0 {
+  color: aliceblue;
+}
+.data0 img {
+  display: flex;
+  margin-left: 8rem;
+  margin-top: 10rem;
+  width: 50vh;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgb(111, 163, 179), 0 6px 20px 0 rgb(141, 175, 220);
+}
+.data0 h1 {
+  margin-top: 0;
+  text-align: left;
+  font-size: 4rem;
+  text-shadow: 2px 2px 10px #000000;
+}
+.data0 p {
+  text-align: justify;
+  margin-left: 0.4rem;
+  font-size: 1.5rem;
+}
+.data0 h2 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-shadow: 2px 2px 10px #000000;
+}
+.data0 li {
+  list-style-type: disc;
+  font-size: 1.5rem;
+  margin-left: 1.8rem;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.column2 {
+  float: left;
+  margin-top: 14rem;
+  margin-left: 3rem;
+  width: 50%;
+  padding: 15px;
+}
+
+.content0:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content1 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-color: #131a43;
 }/*# sourceMappingURL=style.css.map */
