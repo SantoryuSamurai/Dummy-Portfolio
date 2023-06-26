@@ -16,7 +16,7 @@ html {
 .container1 {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(black,transparent),url(/resume/assets/zoro_goosebumps.jpg);
+    background-image: linear-gradient(black,transparent),url(./assets/zoro_goosebumps.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 7.5em;
@@ -99,7 +99,7 @@ html {
         line-height: .8em;
         color: transparent;
         -webkit-text-stroke: 1px white;
-        background: url(/resume/assets/back.png);
+        background: url(./assets/back.png);
         -webkit-background-clip: text;
         background-position: 0 0;
         animation: move 20s linear infinite;
@@ -121,7 +121,7 @@ html {
 .container2 {
     width: 100%;
     height: 100vh;
-    background-image: url(/resume/assets/blackbg.jpg);
+    background-image: url(./assets/blackbg.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -154,7 +154,7 @@ html {
 .container3 {
     width: 100%;
     height: 100vh;
-    background-image: url(/resume/assets/blackbg.jpg);
+    background-image: url(./assets/blackbg.jpg);
     background-size: contain;
     background-position: center;
     display: flex;
@@ -213,7 +213,7 @@ html {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(/resume/assets/blackbg.jpg);
+    background-image: url(./assets/blackbg.jpg);
     background-size: cover;
     background-position: center;
     padding: 0 8%;
